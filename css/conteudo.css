@@ -1,0 +1,115 @@
+.conteudo {
+    background-color: var(--cinza-fundo);
+}
+
+.banner__unico {
+    background: url(../img/banner/banner.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner__titulo {
+    margin: 1rem 4rem;
+    color: var(--branco-texto);
+    font-size: 50px;
+}
+
+.banner__subtitulo {
+    margin: 1rem 4rem;
+    color: var(--branco-texto);
+}
+
+.banner__botao {
+    margin: 1rem 4rem;
+    background: var(--azul-links);
+    color: var(--branco-texto);
+    border: none;
+    width: 7rem;
+    height: 3rem;
+}
+
+.produtos {
+    margin: 2rem 4rem;
+}
+
+.produtos:last-child {
+    margin-bottom: 0;
+}
+
+.starwars__cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.starwars__titulo {
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--preto-texto);
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.starwars__botao {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--azul-links);
+}
+
+.starwars__conteudo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.starwars__card {
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 15rem auto;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.starwars__card:last-child {
+    margin-right: 0;
+}
+
+.starwars__card--img {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+
+.starwars__produto--nome {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--preto-texto);
+}
+
+.starwars__produto--valor {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--preto-texto);
+}
+
+.starwars__produto--pagina {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--azul-links);
+}

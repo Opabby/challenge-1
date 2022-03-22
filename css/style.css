@@ -1,0 +1,45 @@
+:root {
+    --branco-texto: #FFFFFF;
+    --preto-texto: #464646;
+
+    --azul-links: #2A7AE4;
+    --azul-fundo: #EAF2FD;
+
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+
+    --raleway: 'Raleway', sans-serif;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+}
+
+header{
+    font-family: var(--raleway);
+    background-color: var(--branco-texto);
+    display: flex;
+    width: 100%;
+}
+
+body {
+    font-family: var(--raleway);
+    margin: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--azul-fundo);
+    width: 100%;
+    padding: 2rem;
+    font-family: var(--raleway);
+}
+
+.botao {
+    background: inherit;
+    border: solid;
+    border-width: 1px;
+    width: 10rem;
+    height: 3rem;
+}

@@ -4,7 +4,7 @@
     }
 
     .banner__unico {
-        background: url(../img/banner/banner.svg);
+        background: url(../img/banner/banner.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -94,7 +94,7 @@
             "card-imagem"
             "card-corpo";
         grid-template-columns: 100%;
-        grid-template-rows: 8rem auto;
+        grid-template-rows: auto auto;
         margin-right: .5rem;
         margin-bottom: 1rem;
         width: calc(50%-0.5rem);
@@ -122,14 +122,14 @@
         font-weight: 500;
         font-size: 14px;
         color: var(--preto-texto);
-        margin: .15rem 0;
+        margin: .5rem 0;
     }
 
     .starwars__produto--valor {
         font-weight: 700;
         font-size: 16px;
         color: var(--preto-texto);
-        margin: .15rem 0;
+        margin: .5rem 0;
     }
 
     .starwars__produto--pagina {
@@ -137,6 +137,63 @@
         font-weight: 700;
         font-size: 16px;
         color: var(--azul-links);
-        margin: .15rem 0;
+        margin: .5rem 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .banner__unico { 
+        height: 25rem;
+    }
+    .banner__titulo {
+        font-size: 61px;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    .banner__subtitulo {
+        font-size: 22px;
+        margin-left: 2rem;
+    }
+    .banner__botao {
+        margin-left: 2rem;
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 14px;
+    }
+    .produtos {
+        margin: 1rem 2rem;
+    }
+    .starwars__conteudo {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+    }
+    .card__2 {
+        margin-right: .5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .banner__titulo {
+        margin: 0.25rem 4rem;
+    }
+    .banner__subtitulo {
+        margin: 0.25rem 4rem;
+    }
+    .banner__botao {
+        margin: 0.25rem 4rem;
+    }
+    .produtos {
+        margin: 1rem 4rem;
+    }
+    .starwars__conteudo {
+        grid-template-columns: repeat(6,1fr);
+    }
+    .card__4 {
+        margin-right: .5rem;
+    }
+    .card__5, .card__6 {
+        display: inline-grid;
     }
 }

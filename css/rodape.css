@@ -22,7 +22,7 @@
     }
     .rodape__lista {
         list-style: none;
-        text-align: center;
+        text-align: left;
         padding-left: 0;
     }
     .rodape__lista--item {
@@ -41,12 +41,12 @@
         font-weight: 700;
         font-size: 18px;
         color: var(--preto-texto);
-        margin-bottom: .25rem;
+        margin-bottom: .5rem;
     }
     .rodape__contato--nome {
         width: 100%;
         height: 3rem;
-        margin-bottom: .25rem;
+        margin-bottom: 1rem;
         background-color: var(--branco-texto);
         color: var(--cinza-texto);
         font-size: 14px;
@@ -62,6 +62,7 @@
         font-weight: 400;
         border: none;
         border-radius: 4px;
+        margin-bottom: .5rem;
     }
     .rodape__contato--botao {
         width: 50%;
@@ -81,5 +82,45 @@
         font-weight: 500;
         font-size: 14px;
         columns: var(--preto-texto);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .rodape__azul {
+        flex-wrap: wrap;
+        height: 20rem;
+        align-items: flex-start;
+    }
+    .rodape__logo{
+        margin-left: 2rem;
+    }
+    .rodape__lista {
+        margin-left: 2rem;
+    }
+    .rodape__contato p {
+        margin-top: 0;
+    }
+    .rodape__contato {
+        margin: 0 2rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .rodape__azul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        height: auto;
+    }
+    .rodape__logo {
+        grid-column: 1/2;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+    .rodape__lista{
+        grid-column: 2/3;
+    }
+    .rodape__contato {
+        grid-column: 3/5;
+        margin: 0 4rem 0 4rem;
     }
 }
